@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Пример использования ресурсов строк -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message"
+        android:textSize="18sp"
+        android:layout_marginBottom="@dimen/button_margin"/>
+
+    <!-- Пример использования форматирования строк -->
+    <TextView
+        android:id="@+id/formattedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginBottom="@dimen/button_margin"/>
+
+    <!-- Пример использования ресурса Plurals -->
+    <TextView
+        android:id="@+id/pluralsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/formattedTextView"
+        android:layout_marginBottom="@dimen/button_margin"/>
+
+    <!-- Пример использования ресурса string array -->
+    <TextView
+        android:id="@+id/fruitsArrayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/pluralsTextView"
+        android:layout_marginBottom="@dimen/button_margin"/>
+
+    <!-- Пример использования ресурса dimension -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fruitsArrayTextView"
+        android:layout_marginBottom="@dimen/button_margin"/>
+
+    <!-- Пример использования ресурса Color -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="121dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-95dp"
+        android:background="@color/primary_color"
+        android:text="Button" />
+
+</RelativeLayout>
+
